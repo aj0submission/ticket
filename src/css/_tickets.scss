@@ -1,0 +1,382 @@
+.page-section .container .about .modal-open
+{
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px;
+  margin: 20px auto;
+  background: #53bd9d;
+  color: white;
+}
+
+.page-section .container .about .modal-mask
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+
+.page-section .container .about .modal-mask.is-show
+{
+  opacity: 1;
+  visibility: visible;
+}
+
+.page-section .container .about .modal-mask .modal-inner
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+  max-width: 600px;
+  padding: 30px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.page-section .container .about .modal-mask .modal-inner .modal-close
+{
+  background: #8fa5a5;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 20px auto;
+  width: 50%;
+  text-align: center;
+}
+
+.page-section .container .about .modal-mask .modal-back
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+div.action a:before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.action a:after
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.action a:hover:before
+{
+    height: 100%;
+}
+
+div.action a:hover:after
+{
+    opacity: 0;
+    top: 100%;
+}
+
+.main-image
+{
+    min-height: auto;
+    height: 100%;
+}
+
+/* modal background */
+/* .page-section .container .back {
+  width: 100%;
+  padding: 60px 20px;
+  border: solid #dddddd;
+  background: #e9e9e8;
+}
+
+.page-section .container .back p{
+    text-align: center;
+} */
+
+.page-section .container .search {
+  width: 70%;
+  height: 380px;
+  margin: 70px auto;
+	padding: 3em 2em 2em 2em;
+	background: #fafafa;
+	border: 1px solid #ebebeb;
+	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+}
+
+.page-section .container .search .group {
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 105px;
+}
+
+.page-section .container .search input {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	-webkit-appearance: none;
+	display: block;
+	background: #fafafa;
+	color: #636363;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+
+.page-section .container .search input:focus { outline: none; }
+
+
+/* input */
+.page-section .container .search label {
+	color: #999;
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	transition: all 0.2s ease;
+}
+
+
+/* active */
+.page-section .container .search input:focus ~ label, input.used ~ label {
+	top: -20px;
+  transform: scale(.75); left: -2px;
+	/* font-size: 14px; */
+	color: #4a89dc;
+}
+
+
+/* Underline */
+.page-section .container .search .bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.page-section .container .search .bar:before, .bar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #1b8cb9;
+	transition: all 0.2s ease;
+}
+
+.page-section .container .search .bar:before { left: 50%; }
+
+.page-section .container .search .bar:after { right: 50%; }
+
+
+/* active */
+.page-section .container .search input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+
+
+/* Highlight */
+.page-section .container .search .highlight {
+	position: absolute;
+	height: 60%; 
+	width: 100px; 
+	top: 25%; 
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+
+/* active */
+.page-section .container .search input:focus ~ .highlight {
+	animation: inputHighlighter 0.3s ease;
+}
+
+/* Button */
+.page-section .container .search .button {
+  position: relative;
+  display: inline-block;
+  padding: 14px 24px;
+  margin: 20px 0;
+  width: 100%;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  letter-spacing: 1px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid rgb(145, 218, 202);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.page-section .container .search .button:focus { outline: 0; }
+
+
+/* Button modifiers */
+.page-section .container .search .btnHover {
+  background: rgb(27, 140, 185);
+}
+
+.page-section .container .search .btnHover:hover { background: rgb(27, 185, 151); }
+
+.tickets {
+  margin: 0 auto;
+  width: 410px;
+  padding: 10px 0px;
+}
+.tickets p{
+  margin: 0 auto;
+}
+
+.result {
+  padding: 35px;
+}
+
+.ticket-result {
+  width: 50%;
+  margin: auto;
+}
+
+.ticket-result p {
+  color: #fff;
+  margin: auto;
+  width: 50%;
+  text-align:center;
+  font-size: 18px;
+}
+
+.ticket-table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.ticket-table td, .ticket-table th {
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.ticket-table td {
+  border: 1px solid #ece9e9;
+  font-size: 14px;
+}
+
+.ticket-table thead th {
+  color: #636363;
+  background: rgb(224, 223, 223);
+}
+
+
+.ticket-table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: rgb(27, 140, 185);
+}
+
+.ticket-table tr:nth-child(even) {
+  background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+  .ticket-table {
+      display: block;
+      width: 100%;
+  }
+  .table-wrapper:before{
+      content: "Scroll horizontally >";
+      display: block;
+      text-align: right;
+      font-size: 11px;
+      color: white;
+      padding: 0 0 10px;
+  }
+  .ticket-table thead, .ticket-table tbody, .ticket-table thead th {
+      display: block;
+  }
+  .ticket-table thead th:last-child{
+      border-bottom: none;
+  }
+  .ticket-table thead {
+      float: left;
+  }
+  .ticket-table tbody {
+      width: auto;
+      position: relative;
+      overflow-x: auto;
+  }
+  .ticket-table td, .ticket-table th {
+      padding: 20px .625em .625em .625em;
+      height: 60px;
+      vertical-align: middle;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: auto;
+      width: 120px;
+      font-size: 13px;
+      text-overflow: ellipsis;
+  }
+  .ticket-table thead th {
+      text-align: left;
+      border-bottom: 1px solid #f7f7f9;
+  }
+  .ticket-table tbody tr {
+      display: table-cell;
+  }
+  .ticket-table tbody tr:nth-child(odd) {
+      background: none;
+  }
+  .ticket-table tr:nth-child(even) {
+      background: transparent;
+  }
+  .ticket-table tr td:nth-child(odd) {
+      background: #F8F8F8;
+      border-right: 1px solid #E6E4E4;
+  }
+  .ticket-table tr td:nth-child(even) {
+      border-right: 1px solid #E6E4E4;
+  }
+  .ticket-table tbody td {
+      display: block;
+      text-align: center;
+  }
+}

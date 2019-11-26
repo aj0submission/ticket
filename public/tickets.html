@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>Tickets Information | TICKETS</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=XXXXXXXX"></script>
+	<meta charset="UTF-8">
+	<meta name="description" content="現在受付中のライブ情報。取り扱いチケット総数は国内最大級！">
+	<meta name="keywords" content="TICKET,チケット,ライヴ">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+	<!-- Google Analytics -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'XXXXXXXX');
+	</script>
+	<!-- End Google Analytics -->
+	<link rel="shortcut icon" href="./assets/img/favicon.ico" >
+	<link rel="stylesheet" href="./assets/css/main.css"/>
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-3">
+                    <div class="logo">
+                        <h1 class="site-logo">Tickets Information</h1>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-9">
+                    <a href="" class="site-btn header-btn">会員登録</a>
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="news.html">NEWS</a></li>
+                            <li><a href="tickets.html">TICKETS</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="nav-switch">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title">TICKETS</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<div class="page-section">
+        <div class="container">
+            <div class="info">
+                <h3>予約受付中ライブ情報</h3>
+            </div>
+            <div class="about">
+                <div id ="modal-open" class="modal-open">
+                入力項目を確認
+                </div>
+                <div id="modal-mask" class="modal-mask">
+                    <div id="modal-inner" class="modal-inner">
+                        <p>A0000, B0000, C0000のいずれかを入力して下さい。</p>
+                        <div id="modal-close" class="modal-close">
+                            閉じる
+                        </div>
+                    </div>
+                    <div id="modal-back" class="modal-back"></div>
+                </div>
+            </div>
+
+                <div class="search">
+                    <div class="group">
+                      <input type="text" id="ticket_input">
+                      <span class="highlight"></span><span class="bar"></span>
+                      <label>入力</label>
+                    </div>
+                    <button type="button" class="button btnHover clickSearch">検索</button>
+                </div>
+        </div>
+	</div><!-- page-section -->
+
+	<div class="page-section">
+        <div class="result">
+            <div class="ticket-result">
+            </div>
+        </div>
+	</div>
+
+    <footer class="footer-section text-center">
+        <script type="text/javascript" src="./assets/js/bundle.js"></script>
+        <div class="container">
+            <div class="copyright">
+                Copyright &copy; 2017-<script>document.write(new Date().getFullYear());</script> XXX inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
