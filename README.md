@@ -1,6 +1,3 @@
-## 作成日
-2019/11 転職用ポートフォリオ
-
 ## URLの注意
 [http://XXXX.sakura.ne.jp/gift/](http://XXXX.sakura.ne.jp/ticket/) の「/ticket」はシンボリックを張って再現しています。  
 そのため、コードのURL関係の記載はすべて「/ticket」から始まるようになっています。　  
